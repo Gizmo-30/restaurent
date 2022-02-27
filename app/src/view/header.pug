@@ -7,34 +7,20 @@ header.header
             span.header__menu-line 
         a.header__nav-button(href="#") RESERVATION
     aside.header__aside 
-        img(src="./images/logo.png", alt="")
+        img.header-logo(src="./images/logo.png", alt="")
         ul.header__aside-ul 
-            li 
-                a.header__aside-li(href="#") MENU
-            li 
-                a.header__aside-li(href="#") ABOUT
-            li 
-                a.header__aside-li(href="#") RESERVATIONS
-            li 
-                a.header__aside-li(href="#") NEWS
-            li 
-                a.header__aside-li(href="#") EVENTS
-            li 
-                a.header__aside-li(href="#") CAREERS
-            li 
-                a.header__aside-li(href="#") CONTACT
-        .header__aside-messengers
+            - var list = ['MENU','ABOUT','RESERVATION','NEWS','EVENTS','CAREERS','CONTACT']
+            each items in list 
+                li.header__aside-li= items
+        .header__aside-links 
+            .header__aside-messengers
+                - var imagesList = ['./images/facebook.svg','./images/instagram.svg','./images/telegram.svg',]
+                each items in imagesList 
+                    img.header__aside-icons(src=items, alt="")
             a(href="#") 
-                img.header__aside-icons(src="./images/facebook.svg", alt="")
-            a(href="#") 
-                img.header__aside-icons(src="./images/instagram.svg", alt="")
-            a(href="#") 
-                img.header__aside-icons(src="./images/telegram.svg", alt="")
-        a(href="#") 
-            button.header__aside-button 
-                a(href="#") 
-                    span.header__aside-en EN 
-                a(href="#") 
-                    span.header__aside-ru /RU
+                button.header__aside-button 
+                    a(href="#") 
+                        span.header__aside-en EN 
+                    a(href="#") 
+                        span.header__aside-ru /RU
 main.main 
-    

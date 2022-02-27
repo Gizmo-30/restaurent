@@ -1,1 +1,2 @@
-import * as header from "./functions/header.js";
+import { header } from "./header/header.js";
+header()
