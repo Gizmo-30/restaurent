@@ -1,0 +1,90 @@
+.header {
+    position: relative;
+    &-img {
+        width: 100%;
+    }
+    &__nav {
+        position: absolute;
+        top: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 50px 0 50px;
+        &-button {
+            display: flex;
+            justify-content: center;
+            color: $white;
+            line-height: 21px;
+            font-size: 18px;
+            font-family: 'PlayfairDisplay-Regular';
+            border: 1px solid #FFFFFF;
+            width: 300px;
+            padding: 15px 0;
+            transition: 0.4s;
+            &:hover {
+                background: $white;   
+                color: $black;  
+            }
+        }
+    }
+    &__menu {
+        &-button {
+            height: 51px;
+            width: 80px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+        &-line    {
+           display: block;
+           width: 80px;
+           height: 3px;
+           background: $white;
+        }
+    }
+    &__aside {
+        position: absolute;
+        left: -290px;
+        max-width: 290px;
+        height: 100%;
+        background: #FFFFFF;
+        top: 0;
+        padding: 22px 50px 56px 50px;
+        transition: 0.4s;
+        &-icons {
+            margin-right: 20px;
+        }
+        &-ul {
+            padding: 30px 0;
+            li {
+                margin-bottom: 15px;  
+            }
+        }
+        &-li {
+            font-size: 20px;
+            line-height: 55px;
+            color: $black;
+            font-family: 'PlayfairDisplay-Regular';
+        }
+        &-button {
+            background: none;
+            border:none;
+            margin-top: 40px;
+        }
+        &-en,&-ru {
+            font-size: 20px;
+            line-height: 100%;  
+            font-family: 'times-new-roman';
+            color: $black;  
+        }
+    }
+    &__aside.active {
+        left: 0;  
+        transition: 1s;
+        overflow: hidden;  
+    }
+    // &__aside.active  &__nav-button{
+    //     opacity: 0;
+    // }
+}

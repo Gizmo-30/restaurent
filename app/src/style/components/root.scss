@@ -1,0 +1,21 @@
+$white: #FFFFFF;
+$black: #000000;
+$fonts: ('PlayfairDisplay-Italic', 400),
+        ('PlayfairDisplay-Regular', 400),
+        ('times-new-roman', 400);
+@each $name, $weight in $fonts {
+    @font-face {
+        font-family: $name;
+        src: url('../fonts/#{$name}.woff');
+        font-weight: $weight;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
