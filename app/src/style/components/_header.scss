@@ -95,72 +95,72 @@
     
 }
 
-@media (max-width: 1880px) {
-    .header {
-        &__menu {
+// @media (max-width: 1880px) {
+//     .header {
+//         &__menu {
             
-        }
-        &__nav {
+//         }
+//         &__nav {
             
-        }
-        &__aside {
-            &-li {
-                line-height: 50px;
-            }
-            &-ul {
-                padding: 20px 0;
-            }
-            &-button {
-                margin-top: 10px;    
-            }
-        }
-    }
-}
-@media (max-width: 1710px) {
-    .header {
-        &-logo {
-            max-height: 180px;
-        }
-        &__aside {
-            &-ul {
-                padding: 15px 0;
-            }    
-        }
-    }
-}
+//         }
+//         &__aside {
+//             &-li {
+//                 line-height: 50px;
+//             }
+//             &-ul {
+//                 padding: 20px 0;
+//             }
+//             &-button {
+//                 margin-top: 10px;    
+//             }
+//         }
+//     }
+// }
+// @media (max-width: 1710px) {
+//     .header {
+//         &-logo {
+//             max-height: 180px;
+//         }
+//         &__aside {
+//             &-ul {
+//                 padding: 15px 0;
+//             }    
+//         }
+//     }
+// }
 
-@media (max-width: 1600px) {
-    .header {
-        &__menu {
-            &-button {
-                gap: 15px;
-            }
-            &-line {
-                width: 60px;
-                height: 2px;
-            }    
-        }
-        &__nav {
-            &-button {
-                width: 250px;   
-                padding: 10px 0; 
-            }   
-        }
-        &__aside {
-            padding: 20px 50px;
-            &-ul {
-                padding: 20px 0;
-                li {
-                    margin: 0;
-                }
-            }
-            &-button {
-                padding: 20px 0; 
-                margin: 0;         
-            }
-        }
-    }
-}
+// @media (max-width: 1600px) {
+//     .header {
+//         &__menu {
+//             &-button {
+//                 gap: 15px;
+//             }
+//             &-line {
+//                 width: 60px;
+//                 height: 2px;
+//             }    
+//         }
+//         &__nav {
+//             &-button {
+//                 width: 250px;   
+//                 padding: 10px 0; 
+//             }   
+//         }
+//         &__aside {
+//             padding: 20px 50px;
+//             &-ul {
+//                 padding: 20px 0;
+//                 li {
+//                     margin: 0;
+//                 }
+//             }
+//             &-button {
+//                 padding: 20px 0; 
+//                 margin: 0;         
+//             }
+//         }
+//     }
+// }
 
 // @media (max-width: 1440px){
 //     .header {
