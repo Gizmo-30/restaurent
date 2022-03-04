@@ -3,6 +3,10 @@
         display: flex;
     }
     &__section {
+        &-block {
+            display: flex;
+            flex-wrap: wrap;
+        }
         &-img {
             width: 100%;
         }
@@ -44,9 +48,8 @@
         }
     }
     &__block {
+        position: relative;
         &-img {
-            position: relative;
-            width: 100%;
         }
         &-title {
             color: $white;
