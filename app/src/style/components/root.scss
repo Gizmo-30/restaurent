@@ -1,5 +1,7 @@
 $white: #FFFFFF;
 $black: #000000;
+$extraBlack: #252321;
+$inputTextColor: #838383;
 $fonts: ('PlayfairDisplay-Italic', 400),
         ('PlayfairDisplay-Regular', 400),
         ('times-new-roman', 400);
@@ -21,5 +23,8 @@ $fonts: ('PlayfairDisplay-Italic', 400),
 
 ::-webkit-scrollbar {
     width: 0;
+}
+body {
+    background: #F4EFEC;
 }
     
