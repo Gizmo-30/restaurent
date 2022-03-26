@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title about
+        link(rel="stylesheet", href="style/style.min.css")
+    body 
+        include view/header.pug
+        main.main 
+            section.main__section1
+                .main__blockFirst 
+                    img(src="./images/menu-1.webp", alt="")
+                    h2.main__blockFirst-title KITCHEN
+                    a.main__blockFirst-btn MORE
+                .main__blockFirst 
+                    img(src="./images/menu-2.webp", alt="")
+                    h2.main__blockFirst-title KITCHEN
+                    a.main__blockFirst-btn MORE
+                .main__blockFirst 
+                    img(src="./images/menu-3.webp", alt="")
+                    h2.main__blockFirst-title KITCHEN
+                    a.main__blockFirst-btn MORE
+                .main__blockFirst 
+                    img(src="./images/menu-4.webp", alt="")
+                    h2.main__blockFirst-title KITCHEN
+                    a.main__blockFirst-btn MORE 
+            section 
+                form.main__form
+                    div 
+                        input.main__form-input(type="text", placeholder="Date")
+                        input.main__form-input(type="number", placeholder="How many people")
+                        input.main__form-input(type="text", placeholder="Your name")
+                        p.main__form-info Monday - Sunday ; 09:00 - 02:00
+                    div 
+                        input.main__form-input(type="text", placeholder="Time")
+                        input.main__form-input(type="text", placeholder="Special wishes")
+                        input.main__form-input(type="number", placeholder="Your phone")
+                        input.main__form-submit(type="submit", value="RESERVATION")
+                .main__section3-about 
+                    h2.main__section3-title RESERVE A TABLE
+                    p.main__section3-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt a at amet vulputate libero nisi, enim. Mi consequat duis ac malesuada et phasellus sit. Luctus aliquam bibendum semper adipiscing. Tristique tristique semper vestibulum nisi senectus dictum ultricies sodales sagittis. 
+        include view/footer.pug                            
+        script(src="script/app.min.js")  

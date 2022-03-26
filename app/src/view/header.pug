@@ -2,9 +2,20 @@ header.header
     aside.header__aside 
         img.header-logo(src="./images/logo.png", alt="")
         ul.header__aside-ul 
-            - var list = ['MENU','ABOUT','RESERVATION','NEWS','EVENTS','CAREERS','CONTACT']
-            each items in list 
-                li.header__aside-li= items
+            li 
+                a.header__aside-li(href="menu.html") MENU 
+            li 
+                a.header__aside-li(href="") ABOUT 
+            li 
+                a.header__aside-li(href="") RESERVATION 
+            li 
+                a.header__aside-li(href="") NEWS 
+            li 
+                a.header__aside-li(href="") EVENTS 
+            li 
+                a.header__aside-li(href="") CAREERS 
+            li 
+                a.header__aside-li(href="") CONTACT 
         .header__aside-links 
             .header__aside-messengers
                 - var imagesList = ['./images/facebook.svg','./images/instagram.svg','./images/telegram.svg',]
