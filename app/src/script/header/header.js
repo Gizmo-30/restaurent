@@ -1,9 +1,9 @@
 export const header = () => {
     const menuButton = document.querySelector('.header__menu-button'),
-    aside = document.querySelector('.header__aside'),    
-    reservationButton = document.querySelector('.header__nav-button'),
-    headerImg = document.querySelector('.header-img'),
-    headerNav = document.querySelector('.header__nav');
+        aside = document.querySelector('.header__aside'),
+        reservationButton = document.querySelector('.header__nav-button'),
+        headerImg = document.querySelector('.header-img'),
+        headerNav = document.querySelector('.header__nav');
     // menuButton.addEventListener('click', (e) => {
     //     console.log(e.target );
     //     if(e.target.classList.contains('header__menu-button', 'header__menu-line')) {
@@ -29,7 +29,7 @@ export const header = () => {
             z-index: 0;
         `
     })
-    
+
 }
 
 export default header 

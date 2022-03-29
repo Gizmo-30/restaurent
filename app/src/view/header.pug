@@ -1,6 +1,7 @@
 header.header 
     aside.header__aside 
-        img.header-logo(src="./images/logo.png", alt="")
+        a
+            img.header-logo(src="./images/logo.webp", alt="")
         ul.header__aside-ul 
             li 
                 a.header__aside-li(href="menu.html") MENU 
@@ -16,11 +17,14 @@ header.header
                 a.header__aside-li(href="") CAREERS 
             li 
                 a.header__aside-li(href="") CONTACT 
-        .header__aside-links 
+        .header__aside-links
             .header__aside-messengers
-                - var imagesList = ['./images/facebook.svg','./images/instagram.svg','./images/telegram.svg',]
-                each items in imagesList 
-                    img.header__aside-icons(src=items, alt="")
+                a.header__aside-icons(href="")
+                    img(src="./images/facebook.svg", alt="")  
+                a.header__aside-icons(href="")
+                    img(src="./images/instagram.svg", alt="")  
+                a.header__aside-icons(href="")
+                    img(src="./images/telegram.svg", alt="")  
             a(href="#") 
                 button.header__aside-button 
                     a(href="#") 

@@ -3,6 +3,9 @@
     &-img {
         width: 100%;
     }
+    &-logo {
+        max-width: 100%;
+    }
     &__nav {
         position: absolute;
         top: 0;
@@ -11,6 +14,12 @@
         justify-content: space-between;
         align-items: center;
         padding: 50px 50px 0 50px;
+        @media(max-width:1200px) {
+            padding: 35px 35px 0 35px;
+        }
+        @media(max-width:920px) {
+            padding: 20px 20px 0 20px;
+        }
         &-button {
             display: flex;
             justify-content: center;
@@ -26,19 +35,55 @@
                 background: $white;   
                 color: $black;  
             }
+            @media(max-width:1440px) {
+                width: 250px;
+                padding: 12px;
+            }
+            @media(max-width:1200px) {
+                width: 200px;
+                padding: 10px;
+            }
+            @media(max-width:920px) {
+                display: none;
+            }
         }
     }
     &__menu {
         &-button {
             display: flex;
-            gap: 20px;
+            row-gap: 20px;
             flex-direction: column;
+            @media(max-width:1440px) {
+                row-gap: 18px;
+            }
+            @media(max-width:1200px) {
+                row-gap: 15px;
+            }
+            @media(max-width:767px) {
+                row-gap: 10px;
+            }
         }
         &-line    {
            display: block;
            width: 80px;
            height: 3px;
            background: $white;
+           @media(max-width:1440px) {
+                width: 70px;
+                height: 2px;
+            }
+           @media(max-width:1200px) {
+                width: 60px;
+                height: 2px;
+            }
+           @media(max-width:920px) {
+                width: 50px;
+                height: 2px;
+            }
+           @media(max-width:767px) {
+                width: 40px;
+                height: 2px;
+            }
         }
     }
     &__aside {
@@ -48,7 +93,6 @@
         position: absolute;
         left: -290px;
         max-width: 290px;
-        height: 100%;
         background: #FFFFFF;
         top: 0;
         padding: 22px 50px 56px 50px;
@@ -60,6 +104,7 @@
         }
         &-icons {
             margin-right: 20px;
+            display: block;
         }
         &-ul {
             padding: 30px 0;
@@ -68,8 +113,9 @@
             }
         }
         &-li {
+            display: inline-block;
             font-size: 20px;
-            line-height: 55px;
+            line-height: 45px;
             color: $black;
             font-family: 'PlayfairDisplay-Regular';
             cursor: pointer;
@@ -94,195 +140,3 @@
     }
     
 }
-
-// @media (max-width: 1880px) {
-//     .header {
-//         &__menu {
-            
-//         }
-//         &__nav {
-            
-//         }
-//         &__aside {
-//             &-li {
-//                 line-height: 50px;
-//             }
-//             &-ul {
-//                 padding: 20px 0;
-//             }
-//             &-button {
-//                 margin-top: 10px;    
-//             }
-//         }
-//     }
-// }
-// @media (max-width: 1710px) {
-//     .header {
-//         &-logo {
-//             max-height: 180px;
-//         }
-//         &__aside {
-//             &-ul {
-//                 padding: 15px 0;
-//             }    
-//         }
-//     }
-// }
-
-// @media (max-width: 1600px) {
-//     .header {
-//         &__menu {
-//             &-button {
-//                 gap: 15px;
-//             }
-//             &-line {
-//                 width: 60px;
-//                 height: 2px;
-//             }    
-//         }
-//         &__nav {
-//             &-button {
-//                 width: 250px;   
-//                 padding: 10px 0; 
-//             }   
-//         }
-//         &__aside {
-//             padding: 20px 50px;
-//             &-ul {
-//                 padding: 20px 0;
-//                 li {
-//                     margin: 0;
-//                 }
-//             }
-//             &-button {
-//                 padding: 20px 0; 
-//                 margin: 0;         
-//             }
-//         }
-//     }
-// }
-
-// @media (max-width: 1440px){
-//     .header {
-//         &-logo {
-//             display: none;
-//         }
-//         &__aside {
-//             &-li {
-//                 font-size: 18px;
-//             }
-//             &-en,&-ru {
-//                 font-size: 18px;    
-//             }
-//         }    
-//     }    
-// }
-
-// @media (max-width: 1200px){
-//     .header {
-//         &__menu {
-//             &-button {
-//                 gap: 13px;
-//             }
-//             &-line {
-//                 width: 50px;
-//                 height: 2px;
-//             }    
-//         }
-//         &__nav {
-//             padding: 30px 40px 0 40px;
-//             &-button {
-//                 width: 180px;   
-//                 padding: 8px 0;  
-//                 font-size: 16px;   
-//             }
-//         }
-//         &__aside {
-//             padding: 10px 50px;  
-//             &-button {
-//                 padding: 15px 0;
-//             }  
-//         }
-//     }    
-// }
-
-// @media (max-width: 1024px) {
-//     .header {
-//         &__nav {
-//             padding: 30px 30px 0 30px;
-//             &-button {
-//                 display: none;
-//             }    
-//         }
-//         &__aside {
-//             &-ul {
-//                 padding-top: 0;
-//             }
-//             &-li {
-//                 line-height: 45px;
-//             }    
-//         }
-//     }
-// }
-
-// @media (max-width: 1150px) {
-//     .header {
-//         &__aside {
-//             &-ul {
-//                 padding: 0;
-//                 margin-bottom: 15px;
-//             }
-//            &-messengers {
-//                margin-bottom: 10px;
-//            }
-//            &-button {
-//             padding: 0;
-//            }
-//         }
-//     }    
-// }
-
-// @media (max-width: 900px){
-//     .header {
-//         &__aside {
-//             position: fixed;
-//             padding: 35px 50px;
-//            &-icons {
-//                transform: scale(0.8);
-//            } 
-//            &-messengers {
-//                margin-bottom: 5px;
-//            }
-//         }
-//     }        
-    
-// }
-
-// @media (max-width: 875px) {
-//     .header {
-//         &__nav {
-//             &-button {
-//                 display: none;
-//             }    
-//         }
-//         &__aside {
-//             padding: 35px 50px;
-//             position: fixed;
-//             &-ul {
-//                 padding-top: 0;
-//             }
-//         }
-//     }
-// }
-
-// @media (max-width: 425px) {
-//     .header {
-//         &__aside {
-//             padding: 35px 35px;
-//             position: fixed;
-//             &-li,&-en,&-ru {
-//                 font-size: 16px;
-//             }   
-//         }
-//     }
-// }
