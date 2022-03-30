@@ -1,4 +1,4 @@
-export const about = () => {
+export const aboutSection = () => {
     const block = document.querySelectorAll('.main__blockFirst'),
         title = document.querySelectorAll('.main__blockFirst-title'),
         img = document.querySelectorAll('img'),
@@ -13,4 +13,4 @@ export const about = () => {
 
 }
 
-export default about
+export default aboutSection
