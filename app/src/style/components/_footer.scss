@@ -2,27 +2,48 @@
     display: flex;
     flex-direction: column;
 
-    section {
+    &__section {
         display: flex;
-        &:last-of-type {
-            display: flex;
+
+        @media(max-width:1400px) {
+            flex-wrap: wrap;
         }
+
     }
-    
+
     &__about {
-        // max-width: 960px;
         width: 50%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 50px;
+        column-gap: 16%;
+        // flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 50px;
+
+        @media(max-width:1400px) {
+            width: 100%;
+        }
+
+        @media(max-width:767px) {
+            flex-wrap: wrap;
+        }
+
+
     }
 
     &__info {
         display: flex;
         column-gap: 100px;
+
+        @media(max-width:478px) {
+            flex-wrap: wrap;
+            row-gap: 20px;
+            justify-content: center;
+        }
     }
-    
+
     &-title {
         color: $black;
         font-size: 20px;
@@ -30,9 +51,14 @@
         font-family: 'PlayfairDisplay-Regular';
         margin-bottom: 20px;
     }
+
     &__menu {
         display: flex;
         flex-direction: column;
+
+        @media(max-width:478px) {
+            text-align: center;
+        }
     }
 
     &-link {
@@ -43,19 +69,37 @@
         font-family: 'PlayfairDisplay-Regular';
         margin-top: 10px;
     }
-    
+
     &__section {
         &-about {
-            max-width: 960px;
-            width: 100%;
+            width: 50%;
             padding: 50px;
+
+            @media(max-width:1400px) {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
+
         &-title {
-        color: $black;
-        font-size: 48px;
-        line-height: 55px;
-        font-family: 'PlayfairDisplay-Regular';
+            color: $black;
+            font-size: 48px;
+            line-height: 55px;
+            font-family: 'PlayfairDisplay-Regular';
+
+            @media(max-width:992px) {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            @media(max-width:767px) {
+                font-size: 30px;
+                line-height: 35px;
+            }
         }
+
         &-description {
             color: $black;
             font-size: 20px;
@@ -63,26 +107,45 @@
             font-family: 'PlayfairDisplay-Regular';
             max-width: 730px;
             width: 100%;
-        
+            text-align: justify;
+
+
             &:first-of-type {
                 margin: 30px 0 50px 0;
             }
         }
 
     }
-    
-    
+
+
     &__map {
         width: 50%;
+
+        @media(max-width:1400px) {
+            width: 100%;
+        }
+
+        @media(max-width:767px) {
+            height: 400px;
+        }
     }
 
     &__form {
-        max-width: 960px;
-        width: 100%;
+        width: 50%;
         padding: 150px 85px;
         display: flex;
         column-gap: 50px;
         background: $white;
+
+        @media(max-width:1400px) {
+            width: 100%;
+        }
+
+        @media(max-width:767px) {
+            flex-wrap: wrap;
+            padding: 50px 60px;
+
+        }
 
         &-input {
             border: none;
@@ -110,12 +173,19 @@
                 background: #F4EFEC;
             }
         }
+
         &-info {
             color: $black;
             font-size: 18px;
             line-height: 21px;
             font-family: 'PlayfairDisplay-Regular';
             margin-top: 87px;
+
+            @media(max-width:767px) {
+                margin-top: 0;
+                margin-bottom: 50px;
+
+            }
         }
 
 
@@ -138,10 +208,15 @@
                 background: $black;
                 color: $white;
             }
+
+            @media(max-width:767px) {
+                margin: 0;
+
+            }
         }
     }
 
-    
+
 
 }
 
@@ -149,4 +224,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 25px;
+
+    @media(max-width:425px) {
+        flex-direction: row;
+        column-gap: 25px;
+    }
 }
