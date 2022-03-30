@@ -50,6 +50,7 @@
         line-height: 25px;
         font-family: 'PlayfairDisplay-Regular';
         margin-bottom: 20px;
+
     }
 
     &__menu {
@@ -98,6 +99,7 @@
                 font-size: 30px;
                 line-height: 35px;
             }
+
         }
 
         &-description {
@@ -108,6 +110,11 @@
             max-width: 730px;
             width: 100%;
             text-align: justify;
+
+            @media(max-width:992px) {
+                font-size: 18px;
+                line-height: 37px;
+            }
 
 
             &:first-of-type {
@@ -170,7 +177,7 @@
 
             &:focus {
                 transform: scale(1.05);
-                background: #F4EFEC;
+                background: #f1e3da;
             }
         }
 
@@ -210,7 +217,10 @@
             }
 
             @media(max-width:767px) {
-                margin: 0;
+                max-width: none;
+                font-size: 18px;
+                padding: 10px 0;
+
 
             }
         }

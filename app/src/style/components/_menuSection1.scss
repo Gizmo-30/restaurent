@@ -1,0 +1,81 @@
+.mainMenu {
+    &__section {
+        // display: flex;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+        @media(max-width:1400px) {
+            flex-wrap: wrap;
+        }
+
+        &-block {
+            max-width: 480px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            grid: span 1;
+
+            @media(max-width:1400px) {
+                grid-column: span 2;
+                max-width: none;
+                height: 500px;
+                overflow: hidden;
+            }
+        }
+
+        &-img {
+            display: block;
+            width: 100%;
+            filter: blur(7px);
+            transition: 0.5s;
+
+        }
+
+        &-title {
+            color: $white;
+            font-size: 48px;
+            line-height: 50px;
+            font-family: 'PlayfairDisplay-Regular';
+            position: absolute;
+            top: 50px;
+            transition: 0.5s;
+            // opacity: 0;
+        }
+
+        &-btn {
+            color: $white;
+            font-size: 18px;
+            line-height: 24px;
+            font-family: 'PlayfairDisplay-Regular';
+            border: 1px solid #FFFFFF;
+            max-width: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 13px 0;
+            position: absolute;
+            bottom: 30px;
+            transition: 0.5s;
+
+            // opacity: 0;
+            &:hover {
+                background: $white;
+                color: $black;
+            }
+        }
+    }
+}
+
+.mainMenu__section-block.active .mainMenu__section-title,
+.mainMenu__section-block.active .mainMenu__section-btn {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.mainMenu__section-block.active .mainMenu__section-img {
+    filter: blur(0);
+}

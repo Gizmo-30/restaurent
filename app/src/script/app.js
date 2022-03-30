@@ -1,4 +1,4 @@
 import { header } from "./header/header.js";
 header()
-// import { about } from "./menuAnim/menuAnim.js";
-// about()
+import { menuSection } from "./menuSection/menuSection.js";
+menuSection()
